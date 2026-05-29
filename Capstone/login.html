@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Page</title>
+    <title>login page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
-
 
 </head>
 
@@ -17,27 +16,30 @@
         <div class="signupborder">
             <span class="close-btn">&times;</span>
             <div class="heading">
-                <h1>SignUp</h1>
-                <p>Already have an account? <a href="./login.html" style="text-decoration: none;">Login</a></p>
+                <h1 style="font-size: 24px; padding: 12px;" class="text-center py-3">Login</h1>
+
             </div>
 
             <div>
 
 
                 <form>
-                    <input type="text" placeholder="username" class="form-control" />
-                    <br>
-                    <input type="email" placeholder="Email" class="form-control" />
+
+                    <input type="email" placeholder="Email/username" class="form-control" />
                     <br>
                     <input type="password" placeholder="password" class="form-control" />
                     <br>
-                    <input type="password" placeholder="confirm-password" class="form-control" />
-                    <br>
-                    <button type="button" class="btn btn-danger" style="width: 100%;">SignUp</button>
+                    <div class="text-end mb-3">
+                        <a href="#" style="text-decoration:none;">Forgot Password?</a>
+                    </div>
+
+                    <button type="button"
+                        style="width: 100%; color: white; background-color: green; font-size: 20px;">Login</button>
 
                     <br>
                     <br>
- <hr style="color: white;">
+                    <hr style="color: white;">
+
                     <div style="color: white; text-align: center;">
                         <p>or login with</p>
                     </div>
@@ -48,11 +50,16 @@
                         <button type="button" class="google">Google</button>
                         <button type="button" class="twitter">Twitter</button>
                     </div>
+                    <p class="text-center text-white mt-3">
+                        Don't have an account?
+                        <a href="./signup.html">Sign Up</a>
+                    </p>
 
                 </form>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
