@@ -1,3 +1,15 @@
+.main-container{
+    background-color: black;
+    height: 100vh;
+    color: white;
+   
+
+}
+.card-nav{
+    background-color: gray;
+    color: #ffffff;
+   
+}
 .Signup-container {
     background-color: black;
     display: flex;
@@ -101,3 +113,93 @@
     }
 }
 
+.cart-item{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.nav-icons{
+  
+    display: flex;
+    gap: 28px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 25px;
+    
+}
+.money-card{
+    display: flex;
+}
+.headtodel{
+    display: flex;
+    margin-bottom: 15px;
+    
+}
+.quantity-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty-btn{
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.qty-number{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headtodel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .money-card {
+        justify-content: center;
+    }
+
+    .quantity-box {
+        justify-content: center;
+    }
+
+    .nav-icons {
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 24px !important;
+    }
+
+    .cart-item img {
+        width: 100px;
+    }
+
+    .product-details h5 {
+        font-size: 18px;
+    }
+}
