@@ -26,7 +26,6 @@ https://varshini-boat-site.vercel.app
 
 ## Project Structure
 Capstone/
-│
 ├── index.html
 ├── login.html
 ├── signup.html
@@ -43,3 +42,4 @@ Author
 Srivarshini Noothi
 
 GitHub:
+https://github.com/SriVarshininoothi/Webpages/tree/main/Capstone
