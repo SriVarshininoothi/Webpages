@@ -17,18 +17,44 @@ html,body{
     color: #ffffff;
 
 }
-.advantages-mobile{
-    display:flex;
-    justify-content:space-around;
+
+/* Advantages */
+/* Advantages Section */
+.advantages-section {
+    background-color: black;
 }
 
-@media(max-width:768px){
-    .advantages-mobile{
-        flex-direction:column;
-        gap:20px;
+.advantage-icon {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 15px;
+}
+.advantages-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.advantages-mobile > div {
+    flex: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .advantages-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+    .advantages-mobile {
+        grid-template-columns: 1fr;
+    }
+}
 .Signup-container {
     background-color: black;
     display: flex;
@@ -568,17 +594,7 @@ img {
     color: gray;
 }
 
-/* Advantages */
 
-.advantages-section {
-    background-color: black;
-}
-
-.advantage-icon {
-    font-size: 40px;
-    color: red;
-    margin-bottom: 15px;
-}
 
 /* Footer */
 
@@ -732,27 +748,17 @@ body {
         flex-direction: column;
     }
 }
-@media (max-width:768px){
-    .spec-mobile{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
+.spec-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
-.advantages-mobile{
-    display:flex;
-    justify-content:space-around;
+.spec-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
 
-@media (max-width:768px){
-
-    .advantages-mobile{
-        flex-direction:column;
-        gap:20px;
-        align-items:center;
-    }
-
-}
 .footer-mobile{
     display:flex;
     color:white;
@@ -783,4 +789,18 @@ body {
         width:100%;
     }
 
+}
+.spec-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.list-items {
+    list-style: none;
+    padding: 0;
+}
+
+.list-items li {
+    margin-bottom: 15px;
 }
