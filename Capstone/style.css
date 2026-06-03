@@ -664,7 +664,11 @@ img {
     padding: 12px;
 }
 
-input[type="email"]::placeholder {
+.footer-email::placeholder {
+    color: white;
+}
+
+.footer-email {
     background-color: black;
     color: white;
 }
