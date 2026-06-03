@@ -4,11 +4,25 @@
     color: white;
 
 }
-
+html,body{
+    
+    width: 100%;
+}
 .card-nav {
     background-color: gray;
     color: #ffffff;
 
+}
+.advantages-mobile{
+    display:flex;
+    justify-content:space-around;
+}
+
+@media(max-width:768px){
+    .advantages-mobile{
+        flex-direction:column;
+        gap:20px;
+    }
 }
 
 .Signup-container {
