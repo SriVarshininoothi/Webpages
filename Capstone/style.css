@@ -4,9 +4,13 @@
     color: white;
 
 }
+*{
+    box-sizing:border-box;
+}
+
 html,body{
-    
-    width: 100%;
+    overflow-x:hidden;
+    max-width:100%;
 }
 .card-nav {
     background-color: gray;
@@ -67,6 +71,19 @@ html,body{
     border-radius: 5px;
     color: white;
 
+    .footer-mobile{
+    display:flex;
+    justify-content:space-evenly;
+    color:white;
+}
+
+@media(max-width:768px){
+    .footer-mobile{
+        flex-direction:column;
+        gap:20px;
+        padding:10px;
+    }
+}
 }
 
 .SocialLinks {
@@ -709,4 +726,61 @@ img {
 
 body {
     font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 768px) {
+    .offer-box {
+        flex-direction: column;
+    }
+}
+@media (max-width:768px){
+    .spec-mobile{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}
+.advantages-mobile{
+    display:flex;
+    justify-content:space-around;
+}
+
+@media (max-width:768px){
+
+    .advantages-mobile{
+        flex-direction:column;
+        gap:20px;
+        align-items:center;
+    }
+
+}
+.footer-mobile{
+    display:flex;
+    color:white;
+    justify-content:space-evenly;
+}
+
+@media (max-width:768px){
+
+    .footer-mobile{
+        flex-direction:column;
+        gap:25px;
+        padding:15px;
+        text-align:center;
+    }
+
+    .footer-mobile p{
+        width:auto !important;
+    }
+
+}
+.footer-text{
+    width:310px;
+}
+
+@media (max-width:768px){
+
+    .footer-text{
+        width:100%;
+    }
+
 }
